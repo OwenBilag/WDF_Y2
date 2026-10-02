@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Week 03 starter — Compass header/nav, support cells &amp; filter row
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans text-ink">
+    <!-- Base colour and type (bg-paper, font-sans, text-ink) are already
+         here, same three classes as weeks 1 and 2 — nothing new to add.
+         Nothing below has a layout class yet, though: the header row, the
+         nav links, the support cells, and the filter row's fieldsets are
+         all still in normal document flow, everything just stacking block
+         by block. That's what Flexbox is for. -->
+
+    <header>
+      <div>
+        <a href="index.html">
+          <span aria-hidden="true"></span>
+          Compass
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="find-support-services.html">Find support services</a>
+          <a href="student-stories.html">Student stories</a>
+          <a href="accommodations-faq.html">Accommodations FAQ</a>
+          <a href="events.html">Events &amp; drop-ins</a>
+          <a href="request-support.html">Request support</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="flex items-center justify-between bg-ink-deep p-4 text-on-dark">
+      <span class="font-display font-bold">Brand</span>
+      <div class="flex gap-4">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <div class="flex h-60 items-center justify-center bg-paper">
+        <div class="bg-green p-4 text-on-light">Centred, both directions</div>
+    </div>
+    <div class="flex gap-4">
+      <div class="flex-1 bg-lime p-4">A</div>
+      <div class="flex-1 bg-green p-4">B</div>
+      <div class="flex-1 bg-pink p-4">C</div>
+    </div>
+    <div class="flex items-start gap-4">
+      <img
+        src="https://placehold.co/64"
+        alt=""
+        class="h-16 w-16 shrink-0 rounded-full"
+      />
+      <div>
+        <p class="font-bold">Someone's name</p>
+        <p>
+          A longer block of text that can wrap onto several lines without
+          pushing the image out of alignment.
+        </p>
+      </div>
+    </div>
+    <div class="flex min-h-screen flex-col">
+      <header class="bg-ink-deep p-4 text-on-dark">Header</header>
+      <main class="flex-1 p-4">Main content, however tall it needs to be</main>
+      <footer class="mt-auto bg-paper p-4">Footer, always at the bottom</footer>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <span class="rounded-full bg-lime px-3 py-1 text-on-light">Wellbeing</span>
+      <span class="rounded-full bg-lime px-3 py-1 text-on-light">Online</span>
+      <span class="rounded-full bg-lime px-3 py-1 text-on-light">City campus</span>
+      <span class="rounded-full bg-lime px-3 py-1 text-on-light">Drop-in</span>
+      <span class="rounded-full bg-lime px-3 py-1 text-on-light"
+        >Book a place</span
+      >
+    </div>
+    <div class="flex h-64 flex-col gap-2 border-(length:--rule) border-ink p-5">
+      <h3 class="font-bold">Card title</h3>
+      <p>Some body copy, short or long, it doesn't matter.</p>
+      <button
+        class="mt-auto inline-block border-(length:--rule) border-ink bg-transparent px-4 py-2 font-bold text-ink"
+      >
+        Action
+      </button>
+    </div>
+  </body>
+</html>
