@@ -1,4 +1,10 @@
 @import "tailwindcss";
 
-/* Your site's design tokens go in an @theme block here, from your own Figma
-   variables. That is week 7. Until then this file only imports Tailwind. */
+@theme {
+  --color-background: #FCFBF1;
+  --color-accent-dark: #C5E1A5;
+  --color-accent-light: #307016;
+  --color-ink: #013237;
+  --color-mandarin: #DF7948;
+  --color-mandarin-light: #f7c2dd;
+}
