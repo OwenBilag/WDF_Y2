@@ -40,3 +40,41 @@
     animation-duration: 0.01ms !important;
   }
 }
+
+@layer components {
+  .btn {
+    @apply inline-block cursor-pointer border-(length:--rule) border-ink bg-transparent px-6 py-2.5 font-display font-extrabold text-ink no-underline transition-colors duration-120 hover:border-link hover:bg-ink-deep hover:text-on-dark focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link active:bg-ink motion-reduce:transition-none;
+  }
+
+  .card-grid {
+    @apply grid list-none grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 border-t-(length:--rule) border-l-(length:--rule) border-ink p-0;
+  }
+
+  .card {
+    @apply flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink bg-paper p-6 transition-colors duration-120;
+  }
+
+  .card-avatar{
+    @apply mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink;
+  }
+
+  .person-meta {
+    @apply inline-block rounded-full px-3 py-1 font-display text-base font-bold text-on-light;
+  }
+
+  .card__quote-mark {
+    @apply mb-0.5 block font-display text-3xl leading-none font-black text-link;
+  }
+
+  .card__cta {
+    @apply inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link;
+  }
+}
+
+@utility card-hover {
+  @apply border-link;
+}
+
+@utility border-rule-* {
+  border: --value(--border-rule-*);
+}

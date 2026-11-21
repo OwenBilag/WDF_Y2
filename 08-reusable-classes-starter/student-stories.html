@@ -30,15 +30,15 @@
       </p>
 
       <ul
-        class="grid list-none grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 border-t-(length:--rule) border-l-(length:--rule) border-ink p-0"
+        class="card-grid"
       >
         <li class="flex max-w-none">
           <article
-            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-green bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            class="card border-t-green focus-within:border-link hover:border-link"
             aria-labelledby="story-aoife"
           >
             <div
-              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              class="card-avatar"
               aria-hidden="true"
             >
               <img
@@ -56,7 +56,7 @@
               Aoife
             </h2>
             <p
-              class="inline-block rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light"
+              class="person-meta bg-green"
             >
               Second-year Psychology
             </p>
@@ -65,7 +65,7 @@
             >
               <span
                 aria-hidden="true"
-                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                class="card__quote-mark"
                 >&ldquo;</span
               >
               <p class="max-w-[66ch] text-pretty">
@@ -75,20 +75,21 @@
             </blockquote>
             <p class="max-w-[66ch] text-pretty">
               <a
-                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                class="card__cta"
                 href="student-stories/aoife.html"
                 >Read Aoife&rsquo;s story</a
               >
             </p>
           </article>
         </li>
+
         <li class="flex max-w-none">
           <article
-            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-lime bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            class="card border-t-lime focus-within:card-hover hover:card-hover"
             aria-labelledby="story-marcus"
           >
             <div
-              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              class="card-avatar"
               aria-hidden="true"
             >
               <img
@@ -107,14 +108,14 @@
               Marcus
             </h2>
             <p
-              class="inline-block rounded-full bg-lime px-3 py-1 font-display text-base font-bold text-on-light"
+              class="person-meta bg-lime"
             >
               First-year Computer Science
             </p>
             <blockquote class="m-0 border-l-(length:--rule) border-lime pl-3.5">
               <span
                 aria-hidden="true"
-                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                class="card__quote-mark"
                 >&ldquo;</span
               >
               <p class="max-w-[66ch] text-pretty">
@@ -124,20 +125,21 @@
             </blockquote>
             <p class="max-w-[66ch] text-pretty">
               <a
-                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                class="card__cta"
                 href="student-stories/marcus.html"
                 >Read Marcus&rsquo;s story</a
               >
             </p>
           </article>
         </li>
+        
         <li class="flex max-w-none">
           <article
-            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-pink bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            class="card border-t-pink focus-visible:card-hover hover:card-hover"
             aria-labelledby="story-priya"
           >
             <div
-              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              class="card-avatar"
               aria-hidden="true"
             >
               <img
@@ -156,14 +158,14 @@
               Priya
             </h2>
             <p
-              class="inline-block rounded-full bg-pink px-3 py-1 font-display text-base font-bold text-on-light"
+              class="person-meta bg-pink"
             >
               Final-year Architecture
             </p>
             <blockquote class="m-0 border-l-(length:--rule) border-pink pl-3.5">
               <span
                 aria-hidden="true"
-                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                class="card__quote-mark"
                 >&ldquo;</span
               >
               <p class="max-w-[66ch] text-pretty">
@@ -173,7 +175,7 @@
             </blockquote>
             <p class="max-w-[66ch] text-pretty">
               <a
-                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                class="card__cta"
                 href="student-stories/priya.html"
                 >Read Priya&rsquo;s story</a
               >
